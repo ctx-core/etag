@@ -2,6 +2,20 @@
 	"name": "@ctx-core/etag",
 	"version": "3.1.33",
 	"description": "ctx-core etag",
+	"keywords": [
+		"ctx-core",
+		"etag"
+	],
+	"homepage": "https://github.com/ctx-core/etag#readme",
+	"bugs": {
+		"url": "https://github.com/ctx-core/etag/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ctx-core/etag/issues"
+	},
+	"license": "Apache-2.0",
+	"author": "Brian Takita",
 	"main": "./index.js",
 	"module": "./index.js",
 	"types": "./index.ts",
@@ -9,31 +23,17 @@
 		"build": "npm run clean && npm run compile",
 		"clean": "rm -f tsconfig.tsbuildinfo",
 		"compile": "tsc -b",
-		"prepublishOnly": "npm run compile",
-		"exec": "$@"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/ctx-core/etag/issues"
-	},
-	"keywords": [
-		"ctx-core",
-		"etag"
-	],
-	"author": "Brian Takita",
-	"license": "Apache-2.0",
-	"bugs": {
-		"url": "https://github.com/ctx-core/etag/issues"
-	},
-	"homepage": "https://github.com/ctx-core/etag#readme",
-	"publishConfig": {
-		"access": "public"
+		"exec": "$@",
+		"prepublishOnly": "npm run compile"
 	},
 	"dependencies": {
 		"crypto": "^1.0.1"
 	},
 	"devDependencies": {
 		"typescript": "^4.0.2"
+	},
+	"publishConfig": {
+		"access": "public"
 	},
 	"gitHead": "263b3e5c1179641a91980a2a193d2a1e09bcf5d4"
 }
