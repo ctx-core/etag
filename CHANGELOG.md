@@ -1,5 +1,11 @@
 # @ctx-core/etag
 
+## 4.0.1
+
+### Patch Changes
+
+- dependency: crypto-js instead of crypto
+
 ## 4.0.0
 
 ### Major Changes

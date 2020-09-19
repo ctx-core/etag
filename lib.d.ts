@@ -1,10 +1,9 @@
+/// <reference types="node" />
+import fs from 'fs';
 /**
  * Create a simple ETag.
- *
- * @param {string|Buffer|Stats} entity
- * @param {object} [options]
- * @param {boolean} [options.weak]
- * @return {String}
- * @public
  */
-export declare function _etag(entity: any, options: any): string;
+export declare function _etag(entity: string | Buffer | typeof fs.Stats, options: _etag_opts_type): string;
+export declare type _etag_opts_type = {
+    weak: boolean;
+};

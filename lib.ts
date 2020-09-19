@@ -3,25 +3,14 @@
  * @see {@link https://github.com/jshttp/etag}
  */
 'use strict'
-import crypto from 'crypto'
+import MD5 from 'crypto-js/md5'
+import Base64 from 'crypto-js/enc-base64';
 import fs from 'fs'
-/**
- * Module dependencies.
- * @private
- */
-const { Stats } = fs
-const base64PadCharRegExp = /=+$/
 const { toString } = Object.prototype
 /**
  * Create a simple ETag.
- *
- * @param {string|Buffer|Stats} entity
- * @param {object} [options]
- * @param {boolean} [options.weak]
- * @return {String}
- * @public
  */
-export function _etag(entity, options) {
+export function _etag(entity: string|Buffer|typeof fs.Stats, options: _etag_opts_type) {
 	if (entity == null) {
 		throw new TypeError('argument entity is required')
 	}
@@ -46,10 +35,6 @@ export function _etag(entity, options) {
 }
 /**
  * Generate an entity tag.
- *
- * @param {Buffer|string} entity
- * @return {string}
- * @private
  */
 function entitytag(entity) {
 	if (entity.length === 0) {
@@ -57,12 +42,7 @@ function entitytag(entity) {
 		return '"0-1B2M2Y8AsgTpgAmY7PhCfg"'
 	}
 	// compute hash of entity
-	const hash =
-		crypto
-			.createHash('md5')
-			.update(entity, 'utf8')
-			.digest('base64')
-			.replace(base64PadCharRegExp, '')
+	const hash = Base64.stringify(MD5(entity))
 	// compute length of entity
 	const len = typeof entity === 'string'
 							? Buffer.byteLength(entity, 'utf8')
@@ -71,14 +51,10 @@ function entitytag(entity) {
 }
 /**
  * Determine if object is a Stats object.
- *
- * @param {object} obj
- * @return {boolean}
- * @api private
  */
 function _isStats(obj) {
 	// genuine fs.Stats
-	if (typeof Stats === 'function' && obj instanceof Stats) {
+	if (typeof fs.Stats === 'function' && obj instanceof fs.Stats) {
 		return true
 	}
 	// quack quack
@@ -95,13 +71,12 @@ function _isStats(obj) {
 }
 /**
  * Generate a tag for a stat.
- *
- * @param {object} stat
- * @return {string}
- * @private
  */
 function stattag(stat) {
 	const mtime = stat.mtime.getTime().toString(16)
 	const size = stat.size.toString(16)
 	return `"${size}-${mtime}"`
+}
+export type _etag_opts_type = {
+	weak: boolean
 }

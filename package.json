@@ -1,6 +1,6 @@
 {
   "name": "@ctx-core/etag",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "ctx-core etag",
   "keywords": [
     "ctx-core",
@@ -27,7 +27,7 @@
     "prepublishOnly": "npm run compile"
   },
   "dependencies": {
-    "crypto": "^1.0.1"
+    "crypto-js": "~4.0.0"
   },
   "devDependencies": {
     "typescript": "^4.0.3"
