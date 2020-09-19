@@ -1,6 +1,6 @@
 {
   "name": "@ctx-core/etag",
-  "version": "3.1.34",
+  "version": "4.0.0",
   "description": "ctx-core etag",
   "keywords": [
     "ctx-core",
@@ -30,7 +30,7 @@
     "crypto": "^1.0.1"
   },
   "devDependencies": {
-    "typescript": "^4.0.2"
+    "typescript": "^4.0.3"
   },
   "publishConfig": {
     "access": "public"
