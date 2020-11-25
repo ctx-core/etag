@@ -1,5 +1,11 @@
 # @ctx-core/etag
 
+## 4.1.0
+
+### Minor Changes
+
+- interface instead of type
+
 ## 4.0.4
 
 ### Patch Changes
