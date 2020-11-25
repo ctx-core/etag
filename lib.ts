@@ -77,6 +77,6 @@ function stattag(stat) {
 	const size = stat.size.toString(16)
 	return `"${size}-${mtime}"`
 }
-export type _etag_opts_type = {
-	weak: boolean
+export interface _etag_opts_type {
+	weak:boolean
 }
