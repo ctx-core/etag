@@ -26,7 +26,6 @@
 		"exec": "$@",
 		"prepublishOnly": "npm run compile"
 	},
-	"dependencies": {},
 	"devDependencies": {
 		"@ctx-core/btoa": "workspace:^4.0.75",
 		"ts-md5": "^1.2.7",
