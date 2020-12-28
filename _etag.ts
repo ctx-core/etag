@@ -3,22 +3,22 @@
  * @see {@link https://github.com/jshttp/etag}
  */
 'use strict'
-import MD5 from 'crypto-js/md5'
-import Base64 from 'crypto-js/enc-base64';
 import fs from 'fs'
+import { Md5 } from 'ts-md5/dist/md5'
+import { btoa } from '@ctx-core/btoa'
 const { toString } = Object.prototype
 /**
  * Create a simple ETag.
  */
-export function _etag(entity: string|Buffer|typeof fs.Stats, options: _etag_opts_type) {
+export function _etag(entity:string|Buffer|typeof fs.Stats, options:_etag_opts_type) {
 	if (entity == null) {
 		throw new TypeError('argument entity is required')
 	}
 	// support fs.Stats object
 	const isStats = _isStats(entity)
 	const weak = options && typeof options.weak === 'boolean'
-						 ? options.weak
-						 : isStats
+							 ? options.weak
+							 : isStats
 	// validate argument
 	if (
 		!isStats
@@ -32,22 +32,6 @@ export function _etag(entity: string|Buffer|typeof fs.Stats, options: _etag_opts
 							? stattag(entity)
 							: entitytag(entity)
 	return weak ? `W/${tag}` : tag
-}
-/**
- * Generate an entity tag.
- */
-function entitytag(entity) {
-	if (entity.length === 0) {
-		// fast-path empty
-		return '"0-1B2M2Y8AsgTpgAmY7PhCfg"'
-	}
-	// compute hash of entity
-	const hash = Base64.stringify(MD5(entity))
-	// compute length of entity
-	const len = typeof entity === 'string'
-							? Buffer.byteLength(entity, 'utf8')
-							: entity.length
-	return `"${len.toString(16)}-${hash}"`
 }
 /**
  * Determine if object is a Stats object.
@@ -76,6 +60,22 @@ function stattag(stat) {
 	const mtime = stat.mtime.getTime().toString(16)
 	const size = stat.size.toString(16)
 	return `"${size}-${mtime}"`
+}
+/**
+ * Generate an entity tag.
+ */
+function entitytag(entity:string|any) {
+	if (entity.length === 0) {
+		// fast-path empty
+		return '"0-1B2M2Y8AsgTpgAmY7PhCfg"'
+	}
+	// compute hash of entity
+	const hash = btoa(Md5.hashStr(entity) as string)
+	// compute length of entity
+	const len = typeof entity === 'string'
+							? Buffer.byteLength(entity, 'utf8')
+							: entity.length
+	return `"${len.toString(16)}-${hash}"`
 }
 export interface _etag_opts_type {
 	weak:boolean

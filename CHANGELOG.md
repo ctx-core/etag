@@ -1,5 +1,11 @@
 # @ctx-core/etag
 
+## 4.1.3
+
+### Patch Changes
+
+- ts-md5 instead of crypto-js
+
 ## 4.1.2
 
 ### Patch Changes
