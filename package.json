@@ -27,7 +27,7 @@
 		"prepublishOnly": "npm run compile"
 	},
 	"devDependencies": {
-		"@ctx-core/btoa": "workspace:^4.0.88",
+		"@ctx-core/btoa": "workspace:^4.0.89",
 		"ts-md5": "^1.2.7",
 		"typescript": "^4.1.3"
 	},
