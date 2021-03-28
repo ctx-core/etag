@@ -1,5 +1,11 @@
 # @ctx-core/etag
 
+## 5.0.6
+
+### Patch Changes
+
+- fix: npm run compile: tsc -b .
+
 ## 5.0.5
 
 ### Patch Changes
