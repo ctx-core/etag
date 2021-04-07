@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/etag",
-	"version": "5.0.8",
+	"version": "5.0.9",
 	"description": "ctx-core etag",
 	"keywords": [
 		"ctx-core",
@@ -27,9 +27,9 @@
 		"prepublishOnly": "npm run compile"
 	},
 	"devDependencies": {
-		"@ctx-core/btoa": "workspace:^5.0.38",
+		"@ctx-core/btoa": "workspace:^5.0.39",
 		"ts-md5": "^1.2.7",
-		"typescript": "^4.2.3"
+		"typescript": "^4.2.4"
 	},
 	"publishConfig": {
 		"access": "public",
