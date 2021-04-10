@@ -1,5 +1,11 @@
 # @ctx-core/etag
 
+## 5.0.10
+
+### Patch Changes
+
+- update dependencies
+
 ## 5.0.9
 
 ### Patch Changes
