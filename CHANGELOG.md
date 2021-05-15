@@ -1,5 +1,11 @@
 # @ctx-core/etag
 
+## 5.1.0
+
+### Minor Changes
+
+- "noImplicitAny": true
+
 ## 5.0.10
 
 ### Patch Changes

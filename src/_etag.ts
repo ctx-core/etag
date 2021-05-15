@@ -3,14 +3,14 @@
  * @see {@link https://github.com/jshttp/etag}
  */
 'use strict'
-import fs from 'fs'
+import fs, { Stats } from 'fs'
 import { Md5 } from 'ts-md5/dist/md5'
 import { btoa } from '@ctx-core/btoa'
 const { toString } = Object.prototype
 /**
  * Create a simple ETag.
  */
-export function _etag(entity:string|Buffer|typeof fs.Stats, options:_etag_opts_type) {
+export function _etag(entity:Stats, options:_etag_opts_type) {
 	if (entity == null) {
 		throw new TypeError('argument entity is required')
 	}
@@ -36,7 +36,7 @@ export function _etag(entity:string|Buffer|typeof fs.Stats, options:_etag_opts_t
 /**
  * Determine if object is a Stats object.
  */
-function _isStats(obj) {
+function _isStats(obj:any) {
 	// genuine fs.Stats
 	if (typeof fs.Stats === 'function' && obj instanceof fs.Stats) {
 		return true
@@ -56,7 +56,7 @@ function _isStats(obj) {
 /**
  * Generate a tag for a stat.
  */
-function stattag(stat) {
+function stattag(stat:Stats) {
 	const mtime = stat.mtime.getTime().toString(16)
 	const size = stat.size.toString(16)
 	return `"${size}-${mtime}"`
