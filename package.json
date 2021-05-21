@@ -28,7 +28,7 @@
 	},
 	"devDependencies": {
 		"@ctx-core/btoa": "workspace:^5.1.2",
-		"ts-md5": "^1.2.7",
+		"ts-md5": "^1.2.8",
 		"typescript": "^4.2.4"
 	},
 	"publishConfig": {
