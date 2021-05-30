@@ -10,12 +10,12 @@ const { toString } = Object.prototype
 /**
  * Create a simple ETag.
  */
-export function _etag(entity:Stats, options:_etag_opts_type) {
+export function etag_(entity:Stats, options:etag_opts__T) {
 	if (entity == null) {
 		throw new TypeError('argument entity is required')
 	}
 	// support fs.Stats object
-	const isStats = _isStats(entity)
+	const isStats = isStats_(entity)
 	const weak = options && typeof options.weak === 'boolean'
 							 ? options.weak
 							 : isStats
@@ -36,7 +36,7 @@ export function _etag(entity:Stats, options:_etag_opts_type) {
 /**
  * Determine if object is a Stats object.
  */
-function _isStats(obj:any) {
+function isStats_(obj:any) {
 	// genuine fs.Stats
 	if (typeof fs.Stats === 'function' && obj instanceof fs.Stats) {
 		return true
@@ -77,6 +77,9 @@ function entitytag(entity:string|any) {
 							: entity.length
 	return `"${len.toString(16)}-${hash}"`
 }
-export interface _etag_opts_type {
+export interface etag_opts__T {
 	weak:boolean
+}
+export {
+	etag_ as _etag,
 }
