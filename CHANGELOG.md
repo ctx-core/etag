@@ -1,5 +1,11 @@
 # @ctx-core/etag
 
+## 6.0.1
+
+### Patch Changes
+
+- fix: build: clean up old build files in dist
+
 ## 6.0.0
 
 ### Major Changes
