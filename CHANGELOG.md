@@ -1,5 +1,11 @@
 # @ctx-core/etag
 
+## 7.0.1
+
+### Patch Changes
+
+- typescript: ^4.3.2 -> ^4.3.3
+
 ## 7.0.0
 
 ### Major Changes
