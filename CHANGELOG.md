@@ -1,5 +1,11 @@
 # @ctx-core/etag
 
+## 7.0.6
+
+### Patch Changes
+
+- fix: deploying \*.js files
+
 ## 7.0.5
 
 ### Patch Changes
