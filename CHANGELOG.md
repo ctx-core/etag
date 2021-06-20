@@ -1,5 +1,11 @@
 # @ctx-core/etag
 
+## 7.0.5
+
+### Patch Changes
+
+- "prepare": "npm run clean && npm run compile"
+
 ## 7.0.4
 
 ### Patch Changes
