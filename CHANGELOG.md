@@ -1,5 +1,11 @@
 # @ctx-core/etag
 
+## 7.0.7
+
+### Patch Changes
+
+- ts-md5: ^1.2.8 -> ^1.2.9
+
 ## 7.0.6
 
 ### Patch Changes
