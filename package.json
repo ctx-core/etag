@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/etag",
-	"version": "7.0.7",
+	"version": "7.0.8",
 	"description": "ctx-core etag",
 	"keywords": [
 		"ctx-core",
@@ -24,10 +24,10 @@
 		"clean": "rm -f tsconfig.tsbuildinfo && rm -f src/**/*.js && rm -f src/**/*.d.ts && rm -f src/**/*.map",
 		"compile": "./node_modules/.bin/tsc -b .",
 		"exec": "$@",
-		"prepare": "npm run clean && npm run compile"
+		"prepublishOnly": "npm run clean && npm run compile"
 	},
 	"devDependencies": {
-		"@ctx-core/btoa": "workspace:^7.0.6",
+		"@ctx-core/btoa": "workspace:^7.0.7",
 		"ts-md5": "^1.2.9",
 		"typescript": "^4.3.4"
 	},
