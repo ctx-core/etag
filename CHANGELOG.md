@@ -1,5 +1,11 @@
 # @ctx-core/etag
 
+## 7.0.11
+
+### Patch Changes
+
+- dist directory
+
 ## 7.0.10
 
 ### Patch Changes
