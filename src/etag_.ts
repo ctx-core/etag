@@ -10,7 +10,7 @@ const { toString } = Object.prototype
 /**
  * Create a simple ETag.
  */
-export function etag_(entity:Stats, options:etag_opts__T) {
+export function etag_(entity:Stats, options:etag_opts__T):string {
 	if (entity == null) {
 		throw new TypeError('argument entity is required')
 	}
@@ -36,7 +36,7 @@ export function etag_(entity:Stats, options:etag_opts__T) {
 /**
  * Determine if object is a Stats object.
  */
-function isStats_(obj:any) {
+function isStats_(obj:any):boolean {
 	// genuine fs.Stats
 	if (typeof fs.Stats === 'function' && obj instanceof fs.Stats) {
 		return true

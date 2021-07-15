@@ -1,5 +1,11 @@
 # @ctx-core/etag
 
+## 8.0.3
+
+### Patch Changes
+
+- fix: module imports;types
+
 ## 8.0.2
 
 ### Patch Changes
