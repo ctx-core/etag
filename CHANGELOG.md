@@ -1,5 +1,11 @@
 # @ctx-core/etag
 
+## 8.0.0
+
+### Major Changes
+
+- "type": "module": module npm type
+
 ## 7.0.12
 
 ### Patch Changes
