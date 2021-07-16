@@ -1,5 +1,11 @@
 # @ctx-core/etag
 
+## 8.0.8
+
+### Patch Changes
+
+- "main": "./dist/index.cjs"
+
 ## 8.0.7
 
 ### Patch Changes
