@@ -1,5 +1,11 @@
 # @ctx-core/etag
 
+## 8.0.4
+
+### Patch Changes
+
+- support cjs & esm: + "exports"
+
 ## 8.0.3
 
 ### Patch Changes
