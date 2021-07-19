@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/etag",
-	"version": "8.0.13",
+	"version": "8.0.14",
 	"description": "ctx-core etag",
 	"keywords": [
 		"ctx-core",
@@ -21,9 +21,11 @@
 	"module": "./dist/index.js",
 	"types": "./dist/index.d.ts",
 	"exports": {
-		"require": "./dist/index.cjs",
-		"import": "./dist/index.js",
-		"package.json": "./package.json"
+		".": {
+			"require": "./dist/index.cjs",
+			"import": "./dist/index.js"
+		},
+		"./package.json": "./package.json"
 	},
 	"scripts": {
 		"build": "npm run clean && npm run copy-mjs && npm run compile",
@@ -34,7 +36,7 @@
 		"prepublishOnly": "npm run build"
 	},
 	"devDependencies": {
-		"@ctx-core/btoa": "workspace:^8.0.13",
+		"@ctx-core/btoa": "workspace:^8.0.14",
 		"ts-md5": "^1.2.9",
 		"typescript": "^4.3.5"
 	},
