@@ -1,5 +1,11 @@
 # @ctx-core/etag
 
+## 8.0.16
+
+### Patch Changes
+
+- typescript: ^4.3.5 -> ^4.4.2
+
 ## 8.0.15
 
 ### Patch Changes
