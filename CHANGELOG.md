@@ -1,5 +1,11 @@
 # @ctx-core/etag
 
+## 8.0.22
+
+### Patch Changes
+
+- @swc/core: ^1.2.107 -> ^1.2.108
+
 ## 8.0.21
 
 ### Patch Changes
