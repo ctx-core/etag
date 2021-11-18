@@ -1,5 +1,13 @@
 # @ctx-core/etag
 
+## 8.0.23
+
+### Patch Changes
+
+- ts-md5: ^1.2.9 -> ^1.2.10
+- typescript: ^4.4.4 -> ^4.5.2
+- @swc/core: ^1.2.108 -> ^1.2.110
+
 ## 8.0.22
 
 ### Patch Changes
