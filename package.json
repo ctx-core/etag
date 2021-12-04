@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/etag",
-	"version": "8.0.26",
+	"version": "8.0.27",
 	"description": "ctx-core etag",
 	"keywords": [
 		"ctx-core",
@@ -35,9 +35,9 @@
 		"prepublishOnly": "npm run clean && npm run build"
 	},
 	"devDependencies": {
-		"@ctx-core/btoa": "workspace:^8.0.28",
+		"@ctx-core/btoa": "workspace:^8.0.29",
 		"@swc/cli": "^0.1.52",
-		"@swc/core": "^1.2.116",
+		"@swc/core": "^1.2.117",
 		"ts-md5": "^1.2.10",
 		"typescript": "next"
 	},
