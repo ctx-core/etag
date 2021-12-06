@@ -1,5 +1,11 @@
 # @ctx-core/etag
 
+## 8.0.29
+
+### Patch Changes
+
+- package.json: - "main": explicitly not support cjs
+
 ## 8.0.28
 
 ### Patch Changes
