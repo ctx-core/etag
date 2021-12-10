@@ -1,5 +1,11 @@
 # @ctx-core/etag
 
+## 8.0.30
+
+### Patch Changes
+
+- package.json: - module
+
 ## 8.0.29
 
 ### Patch Changes

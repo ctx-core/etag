@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/etag",
-	"version": "8.0.29",
+	"version": "8.0.30",
 	"description": "ctx-core etag",
 	"keywords": [
 		"ctx-core",
@@ -17,7 +17,6 @@
 	"license": "Apache-2.0",
 	"author": "Brian Takita",
 	"type": "module",
-	"module": "./dist/index.js",
 	"types": "./src/index.ts",
 	"exports": {
 		".": {
@@ -33,7 +32,7 @@
 		"prepublishOnly": "npm run clean && npm run build"
 	},
 	"devDependencies": {
-		"@ctx-core/btoa": "workspace:^8.0.31",
+		"@ctx-core/btoa": "workspace:^8.0.32",
 		"@swc/cli": "^0.1.52",
 		"@swc/core": "^1.2.118",
 		"ts-md5": "^1.2.10",
