@@ -1,5 +1,11 @@
 # @ctx-core/etag
 
+## 8.0.33
+
+### Patch Changes
+
+- fix: tsconfig.json: "rootDir": "."
+
 ## 8.0.32
 
 ### Patch Changes
