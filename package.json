@@ -26,7 +26,7 @@
 	},
 	"scripts": {
 		"build": "npm run compile",
-		"clean": "rm -rf dist",
+		"clean": "rimraf dist",
 		"compile": "swc src --out-dir dist --copy-files --source-maps --config-file .swcrc",
 		"exec": "$@",
 		"prepublishOnly": "npm run clean && npm run build"
@@ -35,6 +35,7 @@
 		"@ctx-core/btoa": "workspace:^8.0.32",
 		"@swc/cli": "^0.1.55",
 		"@swc/core": "^1.2.120",
+		"rimraf": "^3.0.2",
 		"ts-md5": "^1.2.10",
 		"typescript": "next"
 	},
