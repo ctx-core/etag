@@ -1,5 +1,11 @@
 # @ctx-core/etag
 
+## 8.0.34
+
+### Patch Changes
+
+- \*.d.ts export
+
 ## 8.0.33
 
 ### Patch Changes
