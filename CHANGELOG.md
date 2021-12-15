@@ -1,5 +1,11 @@
 # @ctx-core/etag
 
+## 8.0.31
+
+### Patch Changes
+
+- package.json: svelte: ./dist/index.js
+
 ## 8.0.30
 
 ### Patch Changes
