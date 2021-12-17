@@ -1,5 +1,11 @@
 # @ctx-core/etag
 
+## 8.0.37
+
+### Patch Changes
+
+- tsconfig.json: "target": "ES2021"
+
 ## 8.0.36
 
 ### Patch Changes
