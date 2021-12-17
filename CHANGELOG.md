@@ -1,5 +1,11 @@
 # @ctx-core/etag
 
+## 8.0.36
+
+### Patch Changes
+
+- package.json: "types": "./src/index.ts": better editing experience
+
 ## 8.0.35
 
 ### Patch Changes
