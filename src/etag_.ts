@@ -4,7 +4,7 @@
  */
 'use strict'
 import fs, { Stats } from 'fs'
-import { Md5 } from 'ts-md5/dist/md5'
+import { Md5 } from 'ts-md5/lib/md5'
 import { btoa } from '@ctx-core/btoa'
 const { toString } = Object.prototype
 /**
