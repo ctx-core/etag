@@ -37,7 +37,7 @@
 	"devDependencies": {
 		"@ctx-core/btoa": "workspace:^8.0.40",
 		"@swc/cli": "^0.1.55",
-		"@swc/core": "^1.2.123",
+		"@swc/core": "^1.2.124",
 		"rimraf": "^3.0.2",
 		"ts-md5": "^1.2.10",
 		"typescript": "next"
