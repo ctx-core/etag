@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/etag",
-	"version": "8.0.38",
+	"version": "8.0.40",
 	"description": "ctx-core etag",
 	"keywords": [
 		"ctx-core",
@@ -17,34 +17,34 @@
 	"license": "Apache-2.0",
 	"author": "Brian Takita",
 	"type": "module",
-	"types": "./lib/index.d.ts",
+	"types": "./src/index.d.ts",
 	"exports": {
 		".": {
-			"import": "./lib/index.js"
+			"import": "./src/index.js"
 		},
 		"./package.json": "./package.json"
 	},
 	"scripts": {
-		"build": "npm run compile",
-		"clean": "rimraf lib && npm run clean:tsbuildinfo",
-		"clean:tsbuildinfo": "rm -f tsconfig.tsbuildinfo && rm -f lib/**/*.d.ts",
-		"compile": "npm run compile:source && npm run compile:declaration",
-		"compile:source": "swc src --out-dir lib --copy-files --source-maps --config-file .swcrc",
-		"compile:declaration": "npm run clean:tsbuildinfo && tsc --declaration --emitDeclarationOnly --declarationDir lib",
+		"build": ":",
+		"clean": ":",
 		"exec": "$@",
-		"prepublishOnly": "npm run clean && npm run build"
+		"prepublishOnly": "npm run clean && npm run build && npm run test",
+		"test": "pnpm test-unit && check-dts",
+		"test-unit": "tsm node_modules/uvu/bin.js . '\\.test\\.(ts|js)$'",
+		"test-unit-coverage": "c8 pnpm test-unit"
 	},
 	"devDependencies": {
-		"@ctx-core/btoa": "workspace:^8.0.40",
-		"@swc/cli": "^0.1.55",
-		"@swc/core": "^1.2.124",
-		"rimraf": "^3.0.2",
+		"@ctx-core/btoa": "workspace:^8.0.42",
+		"c8": "^7.11.0",
+		"check-dts": "^0.6.6",
 		"ts-md5": "^1.2.10",
-		"typescript": "next"
+		"tsm": "^2.2.1",
+		"typescript": "next",
+		"uvu": "^0.5.2"
 	},
 	"publishConfig": {
 		"access": "public",
 		"cache": "~/.npm"
 	},
-	"svelte": "./lib/index.js"
+	"svelte": "./src/index.js"
 }

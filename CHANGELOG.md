@@ -1,5 +1,19 @@
 # @ctx-core/etag
 
+## 8.0.40
+
+### Patch Changes
+
+- .js + .d.ts instead of .ts
+
+## 8.0.39
+
+### Patch Changes
+
+- fix: import { Md5 } from 'ts-md5'
+
+  .js + .d.ts instead of .ts
+
 ## 8.0.38
 
 ### Patch Changes
