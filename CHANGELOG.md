@@ -1,5 +1,11 @@
 # @ctx-core/etag
 
+## 8.0.41
+
+### Patch Changes
+
+- version bump
+
 ## 8.0.40
 
 ### Patch Changes
