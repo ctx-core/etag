@@ -1,5 +1,11 @@
 # @ctx-core/etag
 
+## 8.0.42
+
+### Patch Changes
+
+- uvu: ^0.5.2 -> ^0.5.3
+
 ## 8.0.41
 
 ### Patch Changes

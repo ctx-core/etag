@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/etag",
-	"version": "8.0.41",
+	"version": "8.0.42",
 	"description": "ctx-core etag",
 	"keywords": [
 		"ctx-core",
@@ -34,13 +34,13 @@
 		"test-unit-coverage": "c8 pnpm test-unit"
 	},
 	"devDependencies": {
-		"@ctx-core/btoa": "workspace:^8.0.44",
+		"@ctx-core/btoa": "workspace:^8.0.45",
 		"c8": "^7.11.0",
 		"check-dts": "^0.6.6",
 		"ts-md5": "^1.2.10",
 		"tsm": "^2.2.1",
 		"typescript": "next",
-		"uvu": "^0.5.2"
+		"uvu": "^0.5.3"
 	},
 	"publishConfig": {
 		"access": "public",
