@@ -1,5 +1,11 @@
 # @ctx-core/etag
 
+## 8.0.43
+
+### Patch Changes
+
+- sideEffects = false
+
 ## 8.0.42
 
 ### Patch Changes
