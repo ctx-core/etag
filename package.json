@@ -37,7 +37,7 @@
 		"@ctx-core/btoa": "workspace:^8.0.46",
 		"c8": "^7.11.0",
 		"check-dts": "^0.6.6",
-		"ts-md5": "^1.2.10",
+		"ts-md5": "^1.2.11",
 		"tsm": "^2.2.1",
 		"typescript": "next",
 		"uvu": "^0.5.3"
