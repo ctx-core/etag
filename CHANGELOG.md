@@ -1,5 +1,11 @@
 # @ctx-core/etag
 
+## 8.0.46
+
+### Patch Changes
+
+- package.json: exports: update
+
 ## 8.0.45
 
 ### Patch Changes

@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/etag",
-	"version": "8.0.45",
+	"version": "8.0.46",
 	"description": "ctx-core etag",
 	"keywords": [
 		"ctx-core",
@@ -19,9 +19,7 @@
 	"type": "module",
 	"types": "./src/index.d.ts",
 	"exports": {
-		".": {
-			"import": "./src/index.js"
-		},
+		".": "./src/index.js",
 		"./package.json": "./package.json"
 	},
 	"scripts": {
@@ -34,7 +32,7 @@
 		"test-unit-coverage": "c8 pnpm test-unit"
 	},
 	"devDependencies": {
-		"@ctx-core/btoa": "^8.0.51",
+		"@ctx-core/btoa": "workspace:^8.0.52",
 		"c8": "^7.11.0",
 		"check-dts": "^0.6.6",
 		"ts-md5": "^1.2.11",
