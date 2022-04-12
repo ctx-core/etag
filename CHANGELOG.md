@@ -1,5 +1,11 @@
 # @ctx-core/etag
 
+## 8.0.47
+
+### Patch Changes
+
+- fix: @ctx-core/\* dependencies
+
 ## 8.0.46
 
 ### Patch Changes
