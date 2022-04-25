@@ -34,7 +34,7 @@
 	"devDependencies": {
 		"@ctx-core/btoa": "^8.0.53",
 		"c8": "^7.11.2",
-		"check-dts": "^0.6.6",
+		"check-dts": "^0.6.7",
 		"ts-md5": "^1.2.11",
 		"tsm": "^2.2.1",
 		"typescript": "next",
