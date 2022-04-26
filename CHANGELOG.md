@@ -1,5 +1,11 @@
 # @ctx-core/etag
 
+## 8.0.49
+
+### Patch Changes
+
+- @ctx-core/function: 20.7.1
+
 ## 8.0.48
 
 ### Patch Changes
