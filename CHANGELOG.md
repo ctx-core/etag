@@ -1,5 +1,11 @@
 # @ctx-core/etag
 
+## 8.0.48
+
+### Patch Changes
+
+- @ctx-core/array: 26.2.0
+
 ## 8.0.47
 
 ### Patch Changes
