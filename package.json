@@ -38,7 +38,7 @@
 		"ts-md5": "^1.2.11",
 		"tsm": "^2.2.1",
 		"typescript": "next",
-		"uvu": "^0.5.5"
+		"uvu": "^0.5.6"
 	},
 	"publishConfig": {
 		"access": "public",
