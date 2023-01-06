@@ -1,5 +1,11 @@
 # @ctx-core/etag
 
+## 8.0.54
+
+### Patch Changes
+
+- tsconfig.json: skipLibCheck: true
+
 ## 8.0.53
 
 ### Patch Changes
