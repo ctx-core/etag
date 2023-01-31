@@ -1,5 +1,11 @@
 # @ctx-core/etag
 
+## 8.0.78
+
+### Patch Changes
+
+- tsconfig.json: - importsNotUsedAsValues
+
 ## 8.0.77
 
 ### Patch Changes
