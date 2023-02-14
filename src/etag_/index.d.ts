@@ -1,10 +1,10 @@
 /// <reference types="node" />
-import { Stats } from 'fs'
+import type { Stats } from 'fs'
 /**
  * Create a simple ETag.
  */
-export declare function etag_(entity:Stats, options:etag_opts__T):string;
+export declare function etag_(entity:Stats, options:etag_opts__T):string
 export interface etag_opts__T {
-	weak:boolean;
+	weak:boolean
 }
 export { etag_ as _etag, }

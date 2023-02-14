@@ -1,1 +1,1 @@
-export * from './etag_.js'
+export * from './etag_/index.js'

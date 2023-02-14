@@ -1,6 +1,6 @@
+import { btoa } from '@ctx-core/btoa'
 import fs from 'fs'
 import { Md5 } from 'ts-md5'
-import { btoa } from '@ctx-core/btoa'
 /*!
  * Fork of jshttp/etag
  * @see {@link https://github.com/jshttp/etag}
@@ -9,7 +9,7 @@ import { btoa } from '@ctx-core/btoa'
 const { toString } = Object.prototype
 /**
  * Create a simple ETag.
- * @type {import('etag_').etag_}
+ * @type {typeof import('etag_').etag_}
  */
 export const etag_ = (entity, options)=>{
 	if (entity == null) {
@@ -28,7 +28,8 @@ export const etag_ = (entity, options)=>{
 }
 /**
  * Determine if object is a Stats object.
- */ function isStats_(obj) {
+ */
+function isStats_(obj) {
 	// genuine fs.Stats
 	if (typeof fs.Stats === 'function' && obj instanceof fs.Stats) {
 		return true
@@ -38,14 +39,20 @@ export const etag_ = (entity, options)=>{
 }
 /**
  * Generate a tag for a stat.
- */ function stattag(stat) {
+ * @param stat{import('fs').Stats}
+ * @returns {string}
+ */
+function stattag(stat) {
 	const mtime = stat.mtime.getTime().toString(16)
 	const size = stat.size.toString(16)
 	return `"${size}-${mtime}"`
 }
 /**
  * Generate an entity tag.
- */ function entitytag(entity) {
+ * @param entity{string|Buffer}
+ * @returns {string}
+ */
+function entitytag(entity) {
 	if (entity.length === 0) {
 		// fast-path empty
 		return '"0-1B2M2Y8AsgTpgAmY7PhCfg"'
