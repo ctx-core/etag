@@ -1,5 +1,11 @@
 # @ctx-core/etag
 
+## 8.1.93
+
+### Patch Changes
+
+- @ctx-core/monorepo: ^20.3.3 -> ^20.3.4
+
 ## 8.1.92
 
 ### Patch Changes
