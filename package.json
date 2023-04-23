@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/etag",
-	"version": "8.1.93",
+	"version": "8.1.94",
 	"description": "ctx-core etag",
 	"keywords": [
 		"ctx-core",
@@ -32,7 +32,7 @@
 		"test-unit-coverage": "c8 pnpm test-unit"
 	},
 	"devDependencies": {
-		"@ctx-core/btoa": "^8.1.95",
+		"@ctx-core/btoa": "^8.1.96",
 		"c8": "^7.13.0",
 		"check-dts": "^0.7.1",
 		"ts-md5": "^1.3.1",
