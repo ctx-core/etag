@@ -1,5 +1,11 @@
 # @ctx-core/etag
 
+## 8.1.105
+
+### Patch Changes
+
+- @ctx-core/btoa: ^8.1.106 -> ^8.1.107
+
 ## 8.1.104
 
 ### Patch Changes
