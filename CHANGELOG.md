@@ -1,5 +1,20 @@
 # @ctx-core/etag
 
+## 8.2.0
+
+### Minor Changes
+
+- fix:types package.json exports
+- tsconfig:
+
+      "module": "ESNext"
+      "moduleResolution": "nodenext"
+      "target": "ESNext"
+
+### Patch Changes
+
+- package.json: - "svelte": "./src/index.js"
+
 ## 8.1.149
 
 ### Patch Changes
