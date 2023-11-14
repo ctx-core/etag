@@ -1,5 +1,11 @@
 # @ctx-core/etag
 
+## 8.2.3
+
+### Patch Changes
+
+- package.json: files: + \*.js
+
 ## 8.2.2
 
 ### Patch Changes
