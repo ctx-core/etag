@@ -1,5 +1,11 @@
 # @ctx-core/etag
 
+## 8.2.9
+
+### Patch Changes
+
+- tsx: ^4.1.2 -> ^4.1.3
+
 ## 8.2.8
 
 ### Patch Changes
