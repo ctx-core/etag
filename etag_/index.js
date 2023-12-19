@@ -1,4 +1,4 @@
-import { btoa } from '@ctx-core/btoa'
+import { btoa } from 'ctx-core/btoa'
 import fs from 'fs'
 import { Md5 } from 'ts-md5'
 /*!
