@@ -1,5 +1,11 @@
 # @ctx-core/etag
 
+## 8.2.53
+
+### Patch Changes
+
+- @ctx-core/btoa: ^8.2.52 -> ^8.2.53
+
 ## 8.2.52
 
 ### Patch Changes
