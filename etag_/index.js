@@ -1,5 +1,5 @@
 import { btoa } from 'ctx-core/btoa'
-import fs from 'fs'
+import fs from 'node:fs'
 import { Md5 } from 'ts-md5'
 /*!
  * Fork of jshttp/etag
@@ -39,7 +39,7 @@ function isStats_(obj) {
 }
 /**
  * Generate a tag for a stat.
- * @param stat{import('fs').Stats}
+ * @param stat{import('node:fs').Stats}
  * @returns {string}
  */
 function stattag(stat) {

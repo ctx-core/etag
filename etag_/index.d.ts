@@ -1,5 +1,5 @@
 /// <reference types="node" />
-import type { Stats } from 'fs'
+import type { Stats } from 'node:fs'
 /**
  * Create a simple ETag.
  */
