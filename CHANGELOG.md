@@ -1,5 +1,11 @@
 # @ctx-core/etag
 
+## 8.2.112
+
+### Patch Changes
+
+- ctx-core: ^5.30.0 -> ^5.31.0
+
 ## 8.2.111
 
 ### Patch Changes
