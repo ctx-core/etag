@@ -1,5 +1,11 @@
 # @ctx-core/etag
 
+## 8.2.180
+
+### Patch Changes
+
+- ctx-core: ^7.2.4 -> ^7.2.5
+
 ## 8.2.179
 
 ### Patch Changes
